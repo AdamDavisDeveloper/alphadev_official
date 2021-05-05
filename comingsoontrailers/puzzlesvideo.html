@@ -15,19 +15,42 @@
     <title>Peralandra Puzzles Teaser</title>
   </head>
   <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="../icons/alpha-color.svg" alt="logo" />
+          <h1>Alpha Dev</h1>
+        </div>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a class="active" href="/projects/">Projects</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="header">
       <h1>Peralandra Puzzles Teaser Trailer</h1>
     </div>
     <section>
       <iframe
+        id="Video-iframe"
         width="761"
         height="428"
+        onload="dynamicResize();"
         src="https://www.youtube.com/embed/fIC07wNkXyg"
         title="Peralandra Puzzles Teaser"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      <a href="/projects/"
+        ><button style="cursor: pointer">Return to Projects</button></a
+      >
     </section>
+    <script type="text/javascript">
+      function dynamicResize() {
+        const frame = document.getElementById("Video-iframe");
+      }
+    </script>
   </body>
 </html>
