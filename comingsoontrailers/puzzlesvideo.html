@@ -36,7 +36,7 @@
         id="Video-iframe"
         width="761"
         height="428"
-        onload="dynamicResize();"
+        onload="AdjustIframeHeightOnLoad();"
         src="https://www.youtube.com/embed/fIC07wNkXyg"
         title="Peralandra Puzzles Teaser"
         frameborder="0"
@@ -47,9 +47,40 @@
         ><button style="cursor: pointer">Return to Projects</button></a
       >
     </section>
+
+    <!-- Footer -->
+    <footer class="foot-spacer">
+      <h4>Alpha Dev &copy; 2020 <span>- All Rights Reserved</span></h4>
+      <ul>
+        <li>
+          <a href="https://blog.adamdavisdeveloper.com/" target="_blank"
+            ><img src="/icons/hashnode.svg" alt="hashnode-blog"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/adam-davis-developer/"
+            target="_blank"
+            ><img src="/icons/linked-in.svg" alt="linked-in_social"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/AdamDavisDeveloper" target="_blank"
+            ><img src="/icons/github.svg" alt="github-social"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+
     <script type="text/javascript">
-      function dynamicResize() {
-        const frame = document.getElementById("Video-iframe");
+      function AdjustIframeHeightOnLoad() {
+        document.getElementById("form-iframe").style.height =
+          document.getElementById("form-iframe").contentWindow.document.body
+            .scrollHeight + "px";
+      }
+      function AdjustIframeHeight(i) {
+        document.getElementById("form-iframe").style.height =
+          parseInt(i) + "px";
       }
     </script>
   </body>
