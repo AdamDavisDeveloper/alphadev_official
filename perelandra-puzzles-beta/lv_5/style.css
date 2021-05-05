@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rokkitt", serif;
+  background: black;
+  overflow: hidden;
+}
+
+body {
+  animation: opening 1.7s ease-in-out forwards;
+  height: 100vh;
+  width: 100%;
+}

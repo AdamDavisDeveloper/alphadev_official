@@ -1,0 +1,163 @@
+// VARIABLES //
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-alt: #515151;
+$gray-text: #333232;
+
+// MIXINS //
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  z-index: 5;
+}
+
+@mixin spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0.5rem 3rem;
+  cursor: pointer;
+}
+
+// IMPORTS //
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "comingsoon";
+
+// MEDIA QUERIES - Mobile Resposive //
+@media screen and (max-width: 1156px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  html {
+    font-size: 40%;
+  }
+  footer {
+    h4 {
+      font-size: 2.7rem;
+    }
+  }
+  .form-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  footer {
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 674px) {
+  .card {
+    img {
+      width: 90%;
+      height: 85%;
+    }
+  }
+  form {
+    margin-top: 0rem;
+    padding: 0rem;
+    width: 100%;
+  }
+  footer {
+    h4 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  html {
+    font-size: 40%;
+  }
+  svg {
+    height: 60%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav {
+    .logo {
+      @include flex(center, center, column);
+      flex: 1 1 20rem;
+      margin-top: 2rem;
+    }
+    ul {
+      flex: 1 1 60rem;
+      margin: 2rem 0rem;
+    }
+  }
+  .intro {
+    p {
+      padding: 0rem;
+    }
+    h2 {
+      padding: 0rem;
+    }
+  }
+  .intro-text {
+    margin-top: 0rem;
+    text-align: center;
+  }
+  .intro-images {
+    text-align: center;
+  }
+  .intro-social {
+    @include flex(center, center, row);
+    a {
+      margin: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .about {
+    min-height: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .form-section {
+    form {
+      padding: 2.5rem;
+    }
+  }
+  .notification {
+    p {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .form-section {
+    form {
+      padding: 1.5rem;
+    }
+  }
+}
