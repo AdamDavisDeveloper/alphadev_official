@@ -36,7 +36,6 @@
         id="Video-iframe"
         width="761"
         height="428"
-        onload="AdjustIframeHeightOnLoad();"
         src="https://www.youtube.com/embed/fIC07wNkXyg"
         title="Peralandra Puzzles Teaser"
         frameborder="0"
@@ -73,17 +72,5 @@
         </li>
       </ul>
     </footer>
-
-    <script type="text/javascript">
-      function AdjustIframeHeightOnLoad() {
-        document.getElementById("Video-iframe").style.height =
-          document.getElementById("Video-iframe").contentWindow.document.body
-            .scrollHeight + "px";
-      }
-      function AdjustIframeHeight(i) {
-        document.getElementById("Video-iframe").style.height =
-          parseInt(i) + "px";
-      }
-    </script>
   </body>
 </html>
