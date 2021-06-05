@@ -41,6 +41,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-twitter-grayblue);
+}
+
 /* Background splash image */
 .header-bg {
   height: 60vh;
@@ -120,7 +125,6 @@ nav {
 
 .twitter-link {
   cursor: pointer;
-  color: var(--text-twitter-grayblue);
 }
 
 .list-item::after {
