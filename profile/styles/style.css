@@ -148,7 +148,6 @@ nav {
   font-weight: 400;
   margin-top: 3rem;
   width: 100%;
-  line-height: initial;
 }
 .positions-item {
   display: flex;
@@ -187,6 +186,9 @@ nav {
 }
 
 @media screen and (max-width: 413px) {
+  .positions {
+    line-height: initial;
+  }
   .positions-info ul {
     flex-direction: column;
     align-items: flex-start;
