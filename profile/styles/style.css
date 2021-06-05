@@ -54,9 +54,8 @@ a {
   top: 0;
   left: 0;
   z-index: -100;
-  background-image: url(https://adamdavisdeveloper.com/profile/img/bg-five.jpg);
-  background-repeat: no-repeat;
-  background-position: 100%;
+  background-image: url(https://adamdavisdeveloper.com/profile/img/bg-one.jpg);
+  background-position: center;
 }
 
 /* Nav */
@@ -188,6 +187,9 @@ nav {
 @media screen and (min-width: 800px) {
   .card-header {
     width: 50%;
+  }
+  .header-bg {
+    background-position: initial;
   }
 }
 
