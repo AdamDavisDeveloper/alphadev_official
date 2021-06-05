@@ -54,7 +54,9 @@ a {
   top: 0;
   left: 0;
   z-index: -100;
-  background-image: url(https://adamdavisdeveloper.com/profile/img/bg-four.jpg);
+  background-image: url(https://adamdavisdeveloper.com/profile/img/bg-five.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 /* Nav */
