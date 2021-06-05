@@ -194,6 +194,9 @@ nav {
 }
 
 @media screen and (max-width: 413px) {
+  .profile-info {
+    line-height: initial;
+  }
   .positions {
     line-height: initial;
   }
