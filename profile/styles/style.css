@@ -1,6 +1,6 @@
 :root {
   --text-gray: #666c7e;
-  --soft-black: rgb(32, 32, 32);
+  --soft-black: rgb(46, 46, 46);
   --text-twitter-grayblue: #475ea3;
   --brand-green: #39c6a0;
   --brand-green-hover: #28856c;
@@ -23,6 +23,15 @@ body {
 
 h1 {
   font-size: 2.4rem;
+  color: var(--soft-black);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--soft-black);
 }
 
 li {
@@ -149,9 +158,16 @@ nav {
   color: var(--soft-black);
 }
 
+.positions-item img {
+  width: 20%;
+}
+
 .positions-info {
   display: flex;
   flex-direction: column;
+}
+.positions-info h4 {
+  font-size: 1.4rem;
 }
 
 .positions-info ul {
@@ -166,5 +182,15 @@ nav {
 @media screen and (min-width: 800px) {
   .card-header {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .positions-info ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .positions-item img {
+    width: 25%;
   }
 }
