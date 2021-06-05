@@ -148,6 +148,7 @@ nav {
   font-weight: 400;
   margin-top: 3rem;
   width: 100%;
+  line-height: initial;
 }
 .positions-item {
   display: flex;
