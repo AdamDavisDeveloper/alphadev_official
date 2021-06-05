@@ -164,7 +164,7 @@ nav {
 }
 
 .positions-item img {
-  width: 20%;
+  width: 13%;
 }
 
 .positions-info {
@@ -205,6 +205,6 @@ nav {
     align-items: flex-start;
   }
   .positions-item img {
-    width: 25%;
+    width: 22%;
   }
 }
