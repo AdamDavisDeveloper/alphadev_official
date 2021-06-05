@@ -67,6 +67,10 @@ nav {
   justify-content: space-between;
 }
 
+.nav-logo a {
+  cursor: pointer;
+}
+
 .nav-contact {
   padding: 1.8rem 6.4rem;
   border: none;
