@@ -187,6 +187,21 @@ nav {
   color: var(--text-gray);
 }
 
+/* Social Links */
+.social-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.links-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Media Queries */
 @media screen and (min-width: 800px) {
   .card-header {
