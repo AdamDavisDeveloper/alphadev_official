@@ -1,11 +1,10 @@
-const timeline = [
+export const Data = [
   {
     title: "Hired at Sionic Mobile",
     subtitle: "Web Developer",
     img: "./img/#",
     imgCaption: "",
     date: "June 2021",
-    id: 02,
   },
   {
     title: "Started work as freelance developer",
@@ -13,8 +12,5 @@ const timeline = [
     img: "./img/#",
     imgCaption: "",
     date: "January 2020",
-    id: 01,
   },
 ];
-
-export default timeline;
