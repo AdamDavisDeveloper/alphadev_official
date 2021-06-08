@@ -258,13 +258,25 @@ button img {
 
 /* Timeline */
 .timeline-column {
-  width: 50%;
+  width: 80%;
   margin: auto;
-  padding: 2rem;
 }
 
 .year-2021 {
+  width: 60%;
+  margin: auto;
   padding: 0 2rem;
+}
+
+/* Special Styles */
+.hide {
+  display: none;
+}
+
+#ReadMore {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--soft-black);
 }
 
 /* Media Queries */

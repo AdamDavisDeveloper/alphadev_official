@@ -13,7 +13,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -67,8 +67,16 @@
         <div class="profile-info">
           <p>
             Learning new things and meeting new people. I like books, music,
-            programming and nature. Currently working at a small software
-            company in Atlanta Georgia where I wear many hats. 😌✌️
+            programming and nature...
+            <span
+              id="ReadMore"
+              style="font-weight: 600; cursor: pointer"
+              onclick="show(moreText); hide(readMore)"
+              >Read more</span
+            ><span id="MoreText" class="hide"
+              >Currently working at a small software company in Atlanta Georgia
+              where I wear many hats. 😌✌️</span
+            >
           </p>
         </div>
         <!-- Site Redirects -->
@@ -126,12 +134,14 @@
           </div>
         </div>
       </section>
-      <section class="timeline-column">
+      <!-- Timeline -->
+      <section id="Timeline" class="timeline-column">
         <header class="year-2021">
           <h1>2021</h1>
         </header>
       </section>
     </div>
     <script type="module" src="js/timeline.js"></script>
+    <script src="js/hide.js"></script>
   </body>
 </html>
