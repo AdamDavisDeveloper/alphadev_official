@@ -163,7 +163,7 @@ nav {
   align-items: center;
   height: auto;
   max-width: 100%;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   color: var(--soft-black);
 }
 
@@ -200,6 +200,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Timeline */
+.timeline-column {
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.year-2021 {
+  padding: 0 2rem;
 }
 
 /* Media Queries */
