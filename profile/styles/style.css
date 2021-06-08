@@ -272,6 +272,12 @@ button img {
   }
 }
 
+@media screen and (max-width: 470px) {
+  .justify-content-space-between img {
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 413px) {
   .profile-info {
     line-height: 2.2rem;
