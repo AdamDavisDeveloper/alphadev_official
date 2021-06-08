@@ -1,9 +1,14 @@
 :root {
   --text-gray: #666c7e;
   --soft-black: rgb(46, 46, 46);
+  --clear: rgba(255, 255, 255, 0);
   --text-twitter-grayblue: #475ea3;
   --brand-green: #39c6a0;
   --brand-green-hover: #28856c;
+  /* Button colors */
+  --hashnode: #2e65f6;
+  --projects: #2a5926;
+  --bookshelf: #6e4a7e;
 }
 
 * {
@@ -144,6 +149,49 @@ nav {
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--text-gray);
+}
+
+/* Site Redirect Buttons */
+.buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clear);
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1.3px solid #d0d3db;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: ;
+}
+
+.hashnode:hover {
+  color: var(--hashnode);
+}
+
+.projects {
+  color: var(--projects);
+}
+
+.bookshelf {
+  color: var(--bookshelf);
+}
+
+button img {
+  margin-right: 0.5rem;
 }
 
 /* Positions */
