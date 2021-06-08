@@ -161,6 +161,7 @@ nav {
   align-items: center;
 }
 .buttons button {
+  color: var(--soft-black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,11 +183,11 @@ nav {
   color: var(--hashnode);
 }
 
-.projects {
+.projects:hover {
   color: var(--projects);
 }
 
-.bookshelf {
+.bookshelf:hover {
   color: var(--bookshelf);
 }
 
