@@ -9,6 +9,8 @@
   --hashnode: #2e65f6;
   --projects: #2a5926;
   --bookshelf: #6e4a7e;
+  /* divider line */
+  --line-color: #e4e8f1;
 }
 
 * {
@@ -281,6 +283,13 @@ button img {
   display: none;
 }
 
+.line {
+  background: var(--line-color);
+  height: 1.5px;
+  width: 95%;
+  margin: auto;
+}
+
 #ReadMore {
   font-weight: 600;
   cursor: pointer;
@@ -300,6 +309,13 @@ button img {
 @media screen and (max-width: 470px) {
   .justify-content-space-between img {
     width: 20%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card-header,
+  .year-2021 {
+    width: 100%;
   }
 }
 
