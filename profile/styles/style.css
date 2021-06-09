@@ -268,14 +268,34 @@ button img {
 
 /* Timeline */
 .timeline-column {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
-.year-2021 {
-  width: 60%;
-  margin: auto;
-  padding: 0 2rem;
+.timeline-year {
+  width: 100%;
+  padding: 2rem 2rem;
+}
+
+.timeline-card {
+  position: relative;
+  width: 80%;
+  border-left: 1px solid #e4e8f1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 5rem;
+}
+.timeline-card::before {
+  content: "";
+  display: block;
+  background: url("./img/clock.svg") no-repeat;
+  width: 3rem;
+  color: red;
+  height: 3rem;
+  float: left;
+  position: absolute;
+  left: -0.75rem;
+  top: -0.125rem;
 }
 
 /* Special Styles */
@@ -314,7 +334,7 @@ button img {
 
 @media screen and (max-width: 575px) {
   .card-header,
-  .year-2021 {
+  .timeline-year {
     width: 100%;
   }
 }
