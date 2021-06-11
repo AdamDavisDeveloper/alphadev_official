@@ -7,7 +7,7 @@ export const Data = [
     date: "June 2021",
   },
   {
-    title: "Started work as a freelance developer",
+    title: "Started freelancing",
     subtitle: "Front end web development",
     img: "./img/#",
     imgCaption: "",

@@ -290,7 +290,6 @@ button img {
   display: block;
   background: url("./img/clock.svg") no-repeat;
   width: 3rem;
-  color: red;
   height: 3rem;
   float: left;
   position: absolute;
