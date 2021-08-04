@@ -268,7 +268,7 @@ button img {
 
 /* Timeline */
 .timeline-column {
-  width: 50%;
+  width: 45%;
   margin: auto;
 }
 
@@ -285,7 +285,7 @@ button img {
   padding-right: 1rem;
   padding-bottom: 5rem;
 }
-.timeline-card::before {
+/* .timeline-card::before {
   content: "";
   display: block;
   background: url("./img/clock.svg") no-repeat;
@@ -295,6 +295,11 @@ button img {
   position: absolute;
   left: -0.75rem;
   top: -0.125rem;
+} */
+
+#Clock {
+  max-width: 20px;
+  color: rgb(207, 207, 221);
 }
 
 /* Special Styles */
